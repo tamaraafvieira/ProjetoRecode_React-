@@ -13,7 +13,7 @@ function Home () {
                             Venha viajar conosco!
                         </h2>
                         <div>
-                            <img src="/imagens/feliz.jpg" class="img-fluid" alt=""/>
+                            <img src="/imagens/feliz.jpg" class="img-fluid" alt=""/>                           
                         </div>
                     </div>
                 </div>

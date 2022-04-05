@@ -4,14 +4,16 @@ import Contato from "./componentes/Contato";
 import Destino from "./componentes/Destino";
 import Promocao from "./componentes/Promocao";
 import Clientes from "./componentes/Clientes";
+import Cadastro from "./components/Cadastro";
 import { unstable_renderSubtreeIntoContainer } from "react-dom";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
 
-  const url = window.location.href;
+  //const url = window.location.href;
 
   return (
-    <div>
+    /*<div>
       {       
         url === 'http://localhost:3000/Home' 
         ? <Home/>
@@ -25,7 +27,18 @@ function App() {
         ? <Clientes/>        
         : 'Erro'
       }
-    </div>
+    </div>*/
+    <BrowserRouter>
+    <Routes>
+      <Route path="/Home" element={<Home/>}></Route>
+      <Route path="/Destino" element={<Destino/>}></Route>
+      <Route path="/Promocao" element={<Promocao/>}></Route>
+      <Route path="/Contato" element={<Contato/>}></Route>
+      <Route path="/Clientes" element={<Clientes/>}></Route>           
+      <Route path="/" element={<Home/>}></Route>
+    </Routes>
+   </BrowserRouter>
+    
   );
 }
 

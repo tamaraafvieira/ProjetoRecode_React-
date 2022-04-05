@@ -26,8 +26,9 @@ function Header () {
                                 <a class="nav-link text-light" href="http://localhost:3000/Contato">Contato</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-light" href="http://localhost:3000/Clientes">Clientes</a>
+                                <a class="nav-link text-light" href="http://localhost:3000/Clientes">Cadastro</a>
                             </li>
+                            
                         </ul>
                     </div>
                 </div>
